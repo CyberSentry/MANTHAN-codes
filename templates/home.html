@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 5px solid #FFFF00;
+            padding: 10px;
+            font-size: larger;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<h1 style="text-align: center;color: blue;">WHAT IS CYBER SENTRY?</h1>
+<br>
+<br>
+<div class="center">
+    <p>The objective of our project is to develop a robust prototype that can be integrated with any social media platform to curb cyberbullying. Our system detects cyberbullying on users’ posts and comments and further, their level of toxicity. Besides,
+        in case of highly toxic content shared, it also warns the user and/or temporarily suspends their account for the next two hours as a penalty. The system also extends to detecting cyberbullying on two types of content- images (keeping memes in
+        mind) as well as text content. When a user posts an image, its OCR will be done. When a user shares or posts text data, all the text in it including the emoticons will be extracted directly. The system uses a modern approach to sentiment analysis.
+        Cyberbullying includes negative or toxic posts or comments. Hence, for content to be toxic, it should firstly exhibit negative sentiment. Thus, our system includes two BERT models to detect cyberbullying. The entire text extracted from the user’s
+        post or comment is passed to the first BERT model for the first level of sentiment analysis in which the content is classified into one of these three categories of sentiments: positive, negative or neutral. In case the content is classified to
+        be positive or neutral, the system simply ignores it. However, if the content is classified to be negative, it is passed on to the second BERT model to identify one of the six levels of toxicity: toxic, obscene, insult, threat, identify hate and
+        severely toxic. If the negative content falls into any one of the first three categories (toxic, obscene, insult), the system simply mails and warns the user. But, if it belongs to any of the next three categories (threat, identify hate, severe
+        toxic), it will be regarded as a considerable form of cyberbullying and thus the user will be mailed a warning and their account will also be suspended for the next two hours as a sign of penalty.</p>
+</div>
+
+
+
+<body style="background-image: url('https://www.spincotech.com/images/about-background.jpg');">
+
+ <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</body>
+
+</html>
